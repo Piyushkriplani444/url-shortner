@@ -15,9 +15,8 @@ async function handlegenerateNewShortURL(req, res) {
     redirectURL: body.url,
     visitHistry: [],
   });
-  return res.render("home", {
-    url: shortID,
-  });
+  return res.redirect("/");
+
   // return res.json({ id: shortID });
 }
 

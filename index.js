@@ -18,7 +18,7 @@ app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
 app.use("/url", urlRoute);
-app.use("/test", staticRoute);
+app.use("/", staticRoute);
 
 app.get("/url/:shortId", async (req, res) => {
   const shortId = req.params.shortId;
